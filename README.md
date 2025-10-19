@@ -132,11 +132,20 @@ The application uses Drizzle ORM with the following main tables:
 
 ## Production Deployment
 
+### Local Production Build
 1. Set `NODE_ENV=production`
-2. Configure a PostgreSQL database
+2. Configure a PostgreSQL database (optional - uses in-memory storage by default)
 3. Set up proper environment variables
 4. Run `npm run build` to build the application
 5. Use `npm run start` to run the production server
+
+### Vercel Deployment
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Set environment variables in Vercel dashboard
+4. Deploy automatically on push to main branch
+
+See the [Deployment Guide](#deployment-guide) section below for detailed steps.
 
 ## Troubleshooting
 
@@ -161,6 +170,103 @@ npm install nanoid
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
+
+## Deployment Guide
+
+### GitHub Setup
+
+1. **Create a new repository on GitHub**
+   - Go to [GitHub](https://github.com) and create a new repository
+   - Name it something like `praedo-ai-website` or `healthcare-provider-validation`
+   - Don't initialize with README (we already have one)
+
+2. **Push your code to GitHub**
+   ```bash
+   # Add your GitHub repository as remote (replace YOUR_USERNAME and REPO_NAME)
+   git remote add origin https://github.com/YOUR_USERNAME/REPO_NAME.git
+   
+   # Push to GitHub
+   git branch -M main
+   git push -u origin main
+   ```
+
+### Vercel Deployment
+
+1. **Sign up/Login to Vercel**
+   - Go to [Vercel](https://vercel.com)
+   - Sign up or login with your GitHub account
+
+2. **Import your project**
+   - Click "New Project"
+   - Import your GitHub repository
+   - Vercel will auto-detect the framework (React/Vite)
+
+3. **Configure build settings**
+   - **Framework Preset**: Vite
+   - **Build Command**: `npm run vercel-build`
+   - **Output Directory**: `dist/public`
+   - **Install Command**: `npm install`
+
+4. **Set environment variables** (optional)
+   - In Vercel dashboard, go to Settings > Environment Variables
+   - Add any required environment variables:
+     ```
+     NODE_ENV=production
+     PORT=3000
+     ```
+
+5. **Deploy**
+   - Click "Deploy"
+   - Vercel will build and deploy your application
+   - You'll get a live URL like `https://your-project.vercel.app`
+
+### Custom Domain (Optional)
+
+1. **Add custom domain in Vercel**
+   - Go to your project settings
+   - Add your domain in the "Domains" section
+   - Follow Vercel's DNS configuration instructions
+
+### Environment Variables for Production
+
+Create a `.env` file for local development:
+```env
+NODE_ENV=development
+PORT=3000
+DATABASE_URL="postgresql://username:password@localhost:5432/praedo_ai"
+```
+
+For Vercel, set these in the dashboard:
+- `NODE_ENV=production`
+- `PORT=3000` (optional, Vercel handles this automatically)
+
+### Post-Deployment Checklist
+
+- [ ] Verify the application loads correctly
+- [ ] Test all API endpoints
+- [ ] Check file upload functionality
+- [ ] Verify contact form submissions
+- [ ] Test demo functionality
+- [ ] Check responsive design on mobile devices
+- [ ] Verify all external links work
+- [ ] Test performance with Lighthouse
+
+### Troubleshooting Deployment Issues
+
+1. **Build failures**
+   - Check Vercel build logs
+   - Ensure all dependencies are in `package.json`
+   - Verify TypeScript compilation passes locally
+
+2. **API routes not working**
+   - Check Vercel function logs
+   - Ensure server routes are properly configured
+   - Verify `vercel.json` configuration
+
+3. **Static assets not loading**
+   - Check build output directory
+   - Verify Vite build configuration
+   - Ensure assets are in the correct location
 
 ## License
 
