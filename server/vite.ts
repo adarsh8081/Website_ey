@@ -68,15 +68,32 @@ export async function setupVite(app: Express, server: Server) {
 }
 
 export function serveStatic(app: Express) {
-  // In Vercel, the built files are in the root directory
-  const distPath = process.env.NODE_ENV === 'production' 
-    ? path.resolve(import.meta.dirname, "..", "dist", "public")
-    : path.resolve(import.meta.dirname, "public");
+  // In Vercel, the built files are in the dist/public directory
+  const distPath = path.resolve(import.meta.dirname, "..", "dist", "public");
 
   if (!fs.existsSync(distPath)) {
-    throw new Error(
-      `Could not find the build directory: ${distPath}, make sure to build the client first`,
+    console.warn(
+      `Build directory not found: ${distPath}. Make sure to build the client first.`,
     );
+    // Return a simple HTML page for production if build doesn't exist
+    app.use("*", (_req, res) => {
+      res.send(`
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <title>Praedo AI - Healthcare Directory Validation</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+          </head>
+          <body>
+            <h1>Praedo AI</h1>
+            <p>Healthcare Directory Validation Platform</p>
+            <p>Please rebuild the application for production.</p>
+          </body>
+        </html>
+      `);
+    });
+    return;
   }
 
   app.use(express.static(distPath));
