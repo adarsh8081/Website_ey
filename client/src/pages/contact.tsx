@@ -62,11 +62,11 @@ export default function Contact() {
           className="text-center mb-12"
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Let's <span className="text-primary">Talk</span>
+            EY Techathon 2024: <span className="text-primary">Let's Connect</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Interested in a pilot program or enterprise partnership? We'd love to hear from you 
-            and show you how MedIntel.AI can transform your provider directory.
+            Interested in our AI-powered provider validation solution? We'd love to hear from you 
+            and show you how our 4 AI agents can transform your healthcare directory management.
           </p>
         </motion.div>
 
@@ -203,8 +203,8 @@ export default function Contact() {
                   <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <a href="mailto:hello@medintel.ai" className="text-sm text-muted-foreground hover:text-primary">
-                      hello@medintel.ai
+                    <a href="mailto:nishant@eytechathon2024.com" className="text-sm text-muted-foreground hover:text-primary">
+                      nishant@eytechathon2024.com
                     </a>
                   </div>
                 </div>
@@ -212,8 +212,8 @@ export default function Contact() {
                   <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                   <div>
                     <p className="font-medium">Phone</p>
-                    <a href="tel:+15551234567" className="text-sm text-muted-foreground hover:text-primary">
-                      +1 (555) 123-4567
+                    <a href="tel:+1234567890" className="text-sm text-muted-foreground hover:text-primary">
+                      +1 (234) 567-890
                     </a>
                   </div>
                 </div>
@@ -222,8 +222,7 @@ export default function Contact() {
                   <div>
                     <p className="font-medium">Location</p>
                     <p className="text-sm text-muted-foreground">
-                      San Francisco, CA<br />
-                      United States
+                      EY Techathon 2024 - Virtual Event
                     </p>
                   </div>
                 </div>
@@ -245,8 +244,8 @@ export default function Contact() {
               <p className="text-sm text-muted-foreground mb-4">
                 For large-scale deployments, custom integrations, or partnership opportunities:
               </p>
-              <a href="mailto:enterprise@medintel.ai" className="text-sm text-primary hover:underline">
-                enterprise@medintel.ai
+              <a href="mailto:partnerships@eytechathon2024.com" className="text-sm text-primary hover:underline">
+                partnerships@eytechathon2024.com
               </a>
             </Card>
           </motion.div>

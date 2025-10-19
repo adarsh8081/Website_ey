@@ -38,8 +38,17 @@ export default function Problem() {
   return (
     <div className="min-h-screen">
       {/* Hero - Sarah's Story */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-critical/5 via-background to-background py-20 lg:py-32">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden bg-gradient-to-br from-critical/5 via-background to-background dark:bg-gradient-to-br dark:from-critical/10 dark:via-background dark:to-background py-20 lg:py-32 transition-all duration-300">
+        {/* Background Healthcare Image */}
+        <div className="absolute inset-0 opacity-5">
+          <img 
+            src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1920&h=1080&fit=crop&crop=center" 
+            alt="Healthcare Provider Directory Problem"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -50,23 +59,23 @@ export default function Problem() {
                 <AlertTriangle className="h-4 w-4" />
                 <span>Real Impact, Real Consequences</span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-foreground dark:text-heading">
                 The Call That Changed{" "}
-                <span className="text-critical">Everything</span>
+                <span className="text-critical dark:text-critical">Everything</span>
               </h1>
               <div className="prose prose-lg dark:prose-invert">
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                <p className="text-lg text-muted-foreground dark:text-paragraph leading-relaxed mb-4">
                   It was a Tuesday afternoon when Sarah Martinez, a care coordinator at Metro Health Network, 
                   picked up the phone to help a patient find a nearby cardiologist.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-                  She spent <span className="font-semibold text-foreground">three hours</span> calling providers 
+                <p className="text-lg text-muted-foreground dark:text-paragraph leading-relaxed mb-4">
+                  She spent <span className="font-semibold text-foreground dark:text-heading">three hours</span> calling providers 
                   from their network directory. The first number was disconnected. The second went to a 
                   dental office. The third clinic had closed six months ago.
                 </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
+                <p className="text-lg text-muted-foreground dark:text-paragraph leading-relaxed">
                   Meanwhile, her patient — experiencing chest pain — arrived at the closed clinic only to 
-                  discover it was gone. They ended up in the emergency room, adding <span className="font-semibold text-foreground">$8,000</span> to 
+                  discover it was gone. They ended up in the emergency room, adding <span className="font-semibold text-foreground dark:text-heading">$8,000</span> to 
                   their medical bills and nearly costing their life.
                 </p>
               </div>
@@ -77,15 +86,15 @@ export default function Problem() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
-              <Card className="p-8 bg-gradient-to-br from-card to-critical/5 border-critical/20">
+              <Card className="p-8 bg-gradient-to-br from-card to-critical/5 dark:from-card dark:to-critical/10 border-critical/20 transition-all duration-300">
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <div className="h-12 w-12 rounded-full bg-critical/10 flex items-center justify-center flex-shrink-0">
                       <span className="text-2xl">📞</span>
                     </div>
                     <div>
-                      <p className="font-semibold mb-1">Call #1 - 2:15 PM</p>
-                      <p className="text-sm text-muted-foreground">Number disconnected</p>
+                      <p className="font-semibold mb-1 text-foreground dark:text-heading">Call #1 - 2:15 PM</p>
+                      <p className="text-sm text-muted-foreground dark:text-subheading">Number disconnected</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -93,8 +102,8 @@ export default function Problem() {
                       <span className="text-2xl">🦷</span>
                     </div>
                     <div>
-                      <p className="font-semibold mb-1">Call #2 - 2:42 PM</p>
-                      <p className="text-sm text-muted-foreground">Wrong specialty (Dental office)</p>
+                      <p className="font-semibold mb-1 text-foreground dark:text-heading">Call #2 - 2:42 PM</p>
+                      <p className="text-sm text-muted-foreground dark:text-subheading">Wrong specialty (Dental office)</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -102,8 +111,8 @@ export default function Problem() {
                       <span className="text-2xl">🚫</span>
                     </div>
                     <div>
-                      <p className="font-semibold mb-1">Call #3 - 3:18 PM</p>
-                      <p className="text-sm text-muted-foreground">Clinic closed 6 months ago</p>
+                      <p className="font-semibold mb-1 text-foreground dark:text-heading">Call #3 - 3:18 PM</p>
+                      <p className="text-sm text-muted-foreground dark:text-subheading">Clinic closed 6 months ago</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
@@ -111,8 +120,8 @@ export default function Problem() {
                       <span className="text-2xl">🏥</span>
                     </div>
                     <div>
-                      <p className="font-semibold mb-1 text-critical">Result - 4:45 PM</p>
-                      <p className="text-sm text-muted-foreground">Patient in ER, $8,000 bill</p>
+                      <p className="font-semibold mb-1 text-critical dark:text-critical">Result - 4:45 PM</p>
+                      <p className="text-sm text-muted-foreground dark:text-subheading">Patient in ER, $8,000 bill</p>
                     </div>
                   </div>
                 </div>
@@ -130,8 +139,8 @@ export default function Problem() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">The Scale of the Problem</h2>
-          <p className="text-lg text-muted-foreground">Healthcare directory inaccuracy is a nationwide crisis</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground dark:text-heading">The Scale of the Problem</h2>
+          <p className="text-lg text-muted-foreground dark:text-paragraph">Healthcare directory inaccuracy is a nationwide crisis</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -143,10 +152,10 @@ export default function Problem() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
             >
-              <Card className="p-8 text-center hover-elevate">
+              <Card className="p-8 text-center hover-elevate transition-all duration-300">
                 <div className={`${stat.color} flex justify-center mb-4`}>{stat.icon}</div>
-                <p className="text-4xl font-bold mb-2">{stat.value}</p>
-                <p className="text-sm text-muted-foreground">{stat.label}</p>
+                <p className="text-4xl font-bold mb-2 text-foreground dark:text-heading">{stat.value}</p>
+                <p className="text-sm text-muted-foreground dark:text-subheading">{stat.label}</p>
               </Card>
             </motion.div>
           ))}
@@ -154,18 +163,48 @@ export default function Problem() {
       </section>
 
       {/* Pain Point Infographic */}
-      <section className="py-24 bg-muted/30">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-24 bg-muted/30 dark:bg-muted/20 transition-all duration-300 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 opacity-5">
+          <img 
+            src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=1920&h=1080&fit=crop&crop=center" 
+            alt="Manual Healthcare Data Entry"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">The Manual Verification Nightmare</h2>
-            <p className="text-lg text-muted-foreground">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground dark:text-heading">The Manual Verification Nightmare</h2>
+            <p className="text-lg text-muted-foreground dark:text-paragraph">
               Traditional verification is slow, expensive, and error-prone
             </p>
+          </motion.div>
+
+          {/* Visual Problem Illustration */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            className="mb-12"
+          >
+            <div className="relative max-w-4xl mx-auto">
+              <img 
+                src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=800&h=400&fit=crop&crop=center" 
+                alt="Manual Data Verification Process"
+                className="w-full h-64 object-cover rounded-2xl shadow-xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 to-transparent rounded-2xl" />
+              <div className="absolute bottom-4 left-4 text-white">
+                <h3 className="text-lg font-semibold">Manual Provider Verification</h3>
+                <p className="text-sm text-gray-300">Hours of phone calls and data entry</p>
+              </div>
+            </div>
           </motion.div>
 
           <div className="grid md:grid-cols-5 gap-4">
@@ -184,12 +223,12 @@ export default function Problem() {
                 transition={{ delay: index * 0.1 }}
                 className="relative"
               >
-                <Card className="p-6 h-full">
-                  <div className="h-12 w-12 rounded-full bg-critical/10 text-critical font-bold text-xl flex items-center justify-center mb-4 mx-auto">
+                <Card className="p-6 h-full transition-all duration-300">
+                  <div className="h-12 w-12 rounded-full bg-critical/10 dark:bg-critical/20 text-critical font-bold text-xl flex items-center justify-center mb-4 mx-auto">
                     {item.step}
                   </div>
-                  <h3 className="font-semibold mb-2 text-center">{item.label}</h3>
-                  <p className="text-xs text-muted-foreground text-center mb-2">{item.desc}</p>
+                  <h3 className="font-semibold mb-2 text-center text-foreground dark:text-heading">{item.label}</h3>
+                  <p className="text-xs text-muted-foreground dark:text-subheading text-center mb-2">{item.desc}</p>
                   <p className="text-sm font-bold text-critical text-center">{item.time}</p>
                 </Card>
                 {index < 4 && (
@@ -207,9 +246,9 @@ export default function Problem() {
             viewport={{ once: true }}
             className="mt-8 text-center"
           >
-            <Card className="inline-block px-8 py-4 bg-critical/10 border-critical/20">
+            <Card className="inline-block px-8 py-4 bg-critical/10 dark:bg-critical/20 border-critical/20 transition-all duration-300">
               <p className="text-2xl font-bold text-critical">Total: 70 minutes per provider</p>
-              <p className="text-sm text-muted-foreground mt-1">And still only ~60% accuracy</p>
+              <p className="text-sm text-muted-foreground dark:text-subheading mt-1">And still only ~60% accuracy</p>
             </Card>
           </motion.div>
         </div>
@@ -223,8 +262,8 @@ export default function Problem() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">What Happens If Left Unchecked</h2>
-          <p className="text-lg text-muted-foreground">The cascading consequences of inaccurate directories</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-foreground dark:text-heading">What Happens If Left Unchecked</h2>
+          <p className="text-lg text-muted-foreground dark:text-paragraph">The cascading consequences of inaccurate directories</p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -243,12 +282,12 @@ export default function Problem() {
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
               >
-                <Card className={`p-6 ${severityColors[impact.severity as keyof typeof severityColors]} border-2`}>
+                <Card className={`p-6 ${severityColors[impact.severity as keyof typeof severityColors]} border-2 transition-all duration-300`}>
                   <div className="flex items-start space-x-4">
                     <AlertTriangle className="h-6 w-6 text-critical flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="font-semibold text-lg mb-2">{impact.title}</h3>
-                      <p className="text-muted-foreground">{impact.description}</p>
+                      <h3 className="font-semibold text-lg mb-2 text-foreground dark:text-heading">{impact.title}</h3>
+                      <p className="text-muted-foreground dark:text-paragraph">{impact.description}</p>
                     </div>
                   </div>
                 </Card>
@@ -267,12 +306,12 @@ export default function Problem() {
             viewport={{ once: true }}
             className="space-y-6"
           >
-            <h2 className="text-3xl md:text-4xl font-bold">There's a Better Way</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-primary-foreground">There's a Better Way</h2>
             <p className="text-lg opacity-90 max-w-2xl mx-auto">
               Discover how AI-powered validation can solve these problems and transform your provider directory
             </p>
             <Link href="/solution">
-              <Button size="lg" variant="secondary" data-testid="button-see-solution">
+              <Button size="lg" variant="secondary" className="transition-all duration-300" data-testid="button-see-solution">
                 See Our Solution
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Button>

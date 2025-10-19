@@ -88,6 +88,11 @@ export default {
       fontSize: {
         'hero': ['3.5rem', { lineHeight: '1.1', fontWeight: '800' }],
         'hero-mobile': ['2.25rem', { lineHeight: '1.2', fontWeight: '800' }],
+        'display': ['2.5rem', { lineHeight: '1.2', fontWeight: '700' }],
+        'display-mobile': ['2rem', { lineHeight: '1.3', fontWeight: '700' }],
+        'heading': ['1.5rem', { lineHeight: '1.4', fontWeight: '600' }],
+        'body': ['1rem', { lineHeight: '1.6', fontWeight: '400' }],
+        'body-lg': ['1.125rem', { lineHeight: '1.6', fontWeight: '400' }],
       },
       keyframes: {
         "accordion-down": {

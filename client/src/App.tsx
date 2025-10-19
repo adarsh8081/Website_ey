@@ -11,6 +11,7 @@ import About from "@/pages/about";
 import Problem from "@/pages/problem";
 import Solution from "@/pages/solution";
 import Demo from "@/pages/demo";
+import Team from "@/pages/team";
 import Contact from "@/pages/contact";
 import NotFound from "@/pages/not-found";
 
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/problem" component={Problem} />
       <Route path="/solution" component={Solution} />
       <Route path="/demo" component={Demo} />
+      <Route path="/team" component={Team} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>

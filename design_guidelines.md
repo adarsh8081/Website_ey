@@ -1,4 +1,4 @@
-# Design Guidelines: MedIntel.AI Healthcare Directory Validation Platform
+# Design Guidelines: Praedo AI Healthcare Directory Validation Platform
 
 ## Design Approach
 
@@ -286,4 +286,4 @@
 
 ---
 
-This design system balances startup innovation with healthcare professionalism, creating a trustworthy yet approachable platform for MedIntel.AI.
+This design system balances startup innovation with healthcare professionalism, creating a trustworthy yet approachable platform for Praedo AI.

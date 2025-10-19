@@ -1,19 +1,15 @@
 import { Link } from "wouter";
 import { Shield, Lock } from "lucide-react";
+import { Logo } from "./logo";
 
 export function Footer() {
   return (
-    <footer className="border-t bg-muted/30">
+    <footer className="border-t bg-muted/30 dark:bg-background dark:border-border transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-lg">M</span>
-              </div>
-              <span className="font-bold text-xl">MedIntel.AI</span>
-            </div>
+            <Logo size="md" />
             <p className="text-sm text-muted-foreground">
               Automating healthcare provider validation with AI-powered precision.
             </p>
@@ -97,7 +93,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t text-center text-sm text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} MedIntel.AI. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Praedo AI. All rights reserved.</p>
         </div>
       </div>
     </footer>

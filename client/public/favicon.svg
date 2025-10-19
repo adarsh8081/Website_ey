@@ -1,0 +1,62 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dynamic diamond shape -->
+  <path d="M16 2 L26 7 L22 16 L26 25 L16 30 L6 25 L10 16 L6 7 Z" 
+        fill="url(#gradient1)" 
+        stroke="url(#gradient2)" 
+        stroke-width="1"/>
+  
+  <!-- Inner geometric pattern -->
+  <path d="M16 4 L24 8 L20 14 L24 20 L16 24 L8 20 L12 14 L8 8 Z" 
+        fill="url(#innerGlow)" 
+        opacity="0.4"/>
+  
+  <!-- Bold "P" letter -->
+  <path d="M10 10 L10 22 M10 10 L20 10 Q24 10 24 14 L24 18 Q24 22 20 22 L10 22" 
+        stroke="url(#textGradient)" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+  
+  <!-- Electric circuit pattern -->
+  <circle cx="14" cy="13" r="1.5" fill="url(#electricGradient)" opacity="0.9"/>
+  <circle cx="18" cy="14" r="1.2" fill="url(#electricGradient)" opacity="0.7"/>
+  <circle cx="16" cy="16" r="1.2" fill="url(#electricGradient)" opacity="0.8"/>
+  <circle cx="20" cy="15" r="1" fill="url(#electricGradient)" opacity="0.6"/>
+  
+  <!-- Lightning connections -->
+  <path d="M14 13 L16 16 M18 14 L20 15 M16 16 L18 14" 
+        stroke="url(#electricGradient)" 
+        stroke-width="1" 
+        stroke-linecap="round" 
+        opacity="0.7"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="innerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F8FAFC;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="electricGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EF4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>
