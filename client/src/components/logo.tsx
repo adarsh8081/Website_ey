@@ -22,7 +22,7 @@ export function Logo({ className, showText = true, size = "md" }: LogoProps) {
   return (
     <div className={cn("flex items-center space-x-3", className)}>
       <img 
-        src="/src/assets/icon.svg" 
+        src="/icon.svg" 
         alt="Praedo AI" 
         className={sizeClasses[size]}
       />

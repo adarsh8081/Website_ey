@@ -1,0 +1,88 @@
+<svg width="200" height="60" viewBox="0 0 200 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dynamic diamond/rhombus shape -->
+  <path d="M30 8 L48 18 L42 30 L48 42 L30 52 L12 42 L18 30 L12 18 Z" 
+        fill="url(#gradient1)" 
+        stroke="url(#gradient2)" 
+        stroke-width="2"/>
+  
+  <!-- Inner geometric pattern -->
+  <path d="M30 12 L44 20 L40 28 L44 36 L30 44 L16 36 L20 28 L16 20 Z" 
+        fill="url(#innerGlow)" 
+        opacity="0.4"/>
+  
+  <!-- Bold "P" with modern styling -->
+  <path d="M18 16 L18 44 M18 16 L34 16 Q40 16 40 22 L40 28 Q40 34 34 34 L18 34" 
+        stroke="url(#textGradient)" 
+        stroke-width="4" 
+        stroke-linecap="round" 
+        stroke-linejoin="round" 
+        fill="none"/>
+  
+  <!-- Electric circuit pattern -->
+  <circle cx="24" cy="22" r="2.5" fill="url(#electricGradient)" opacity="0.9"/>
+  <circle cx="32" cy="24" r="2" fill="url(#electricGradient)" opacity="0.7"/>
+  <circle cx="28" cy="28" r="2" fill="url(#electricGradient)" opacity="0.8"/>
+  <circle cx="34" cy="26" r="1.5" fill="url(#electricGradient)" opacity="0.6"/>
+  
+  <!-- Lightning bolt connections -->
+  <path d="M24 22 L28 28 M32 24 L34 26 M28 28 L32 24" 
+        stroke="url(#electricGradient)" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        opacity="0.7"/>
+  
+  <!-- Company name with electric styling -->
+  <text x="70" y="30" font-family="Inter, sans-serif" font-size="28" font-weight="900" fill="url(#textGradient)">
+    Praedo
+  </text>
+  <text x="70" y="50" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="url(#accentGradient)">
+    AI
+  </text>
+  
+  <!-- Dynamic background elements -->
+  <circle cx="180" cy="15" r="4" fill="url(#accentGradient)" opacity="0.3"/>
+  <circle cx="185" cy="45" r="3" fill="url(#electricGradient)" opacity="0.4"/>
+  <circle cx="170" cy="35" r="2" fill="url(#accentGradient)" opacity="0.5"/>
+  
+  <!-- Electric lines -->
+  <path d="M160 20 L175 20 M165 40 L180 40" 
+        stroke="url(#accentGradient)" 
+        stroke-width="2" 
+        stroke-linecap="round" 
+        opacity="0.4"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="25%" style="stop-color:#EF4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="75%" style="stop-color:#8B5CF6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06B6D4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F87171;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#A78BFA;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="innerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#FFFFFF;stop-opacity:0.1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0F172A;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1E293B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#EC4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B5CF6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="electricGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FBBF24;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F59E0B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EF4444;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+</svg>

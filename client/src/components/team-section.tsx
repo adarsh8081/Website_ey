@@ -8,7 +8,7 @@ const teamMembers = [
     name: "Adarsh Kumar",
     role: "Team Lead & AI/ML Engineering",
     // TODO: Update photo path if needed - Adarsh Kumar's profile photo
-    image: "/src/uploads/adarsh.jpg",
+    image: "/uploads/adarsh.jpg",
     // TODO: Update LinkedIn URL if needed
     linkedin: "https://www.linkedin.com/in/adarshk8081",
     // TODO: Update GitHub URL if needed
@@ -21,7 +21,7 @@ const teamMembers = [
     name: "Utkarsh Chaudhary",
     role: "Backend Architecture & API Development",
     // TODO: Update photo path if needed - Utkarsh Chaudhary's profile photo
-    image: "/src/uploads/utkarsh.jpg",
+    image: "/uploads/utkarsh.jpg",
     // TODO: Update LinkedIn URL if needed
     linkedin: "https://www.linkedin.com/in/riya-sharma/",
     // TODO: Update GitHub URL if needed
@@ -34,7 +34,7 @@ const teamMembers = [
     name: "Prerit Maheshwari",
     role: "Frontend Development & UX Design",
     // TODO: Update photo path if needed - Prerit Maheshwari's profile photo
-    image: "/src/uploads/prerit.jpg",
+    image: "/uploads/prerit.jpg",
     // TODO: Update LinkedIn URL if needed
     linkedin: "https://www.linkedin.com/in/prerit-maheshwari-136601255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // TODO: Update GitHub URL if needed
@@ -47,7 +47,7 @@ const teamMembers = [
     name: "Shakshi Agrawal",
     role: "Data Science & Analytics",
     // TODO: Update photo path if needed - Shakshi Agrawal's profile photo
-    image: "/src/uploads/shakshi.jpg",
+    image: "/uploads/shakshi.jpg",
     // TODO: Update LinkedIn URL if needed
     linkedin: "https://www.linkedin.com/in/shakshi-agrawal-40335b316/",
     // TODO: Update GitHub URL if needed
@@ -60,7 +60,7 @@ const teamMembers = [
     name: "Abhay Kausal",
     role: "DevOps & Cloud Infrastructure",
     // TODO: Update photo path if needed - Abhay Kausal's profile photo
-    image: "/src/uploads/abhay.png",
+    image: "/uploads/abhay.png",
     // TODO: Update LinkedIn URL if needed
     linkedin: "https://www.linkedin.com/in/abhay-kaushal-b85429248?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
     // TODO: Update GitHub URL if needed
